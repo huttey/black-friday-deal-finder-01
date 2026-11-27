@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrueDeal — Black Friday 2026 deals, checked</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1 class="brand">True<span>Deal</span> — Black Friday 2026</h1>
+    <p class="tagline">Every price checked on 27 November 2026. Every deal judged honestly — including the ones that are not deals.</p>
+    <div class="controls">
+      <input type="search" id="search" placeholder="Search deals, stores, categories…" aria-label="Search deals">
+      <label>Sort
+        <select id="sort">
+          <option value="discount">Biggest discount</option>
+          <option value="saving">Biggest saving ($)</option>
+          <option value="price-asc">Lowest price</option>
+          <option value="price-desc">Highest price</option>
+          <option value="name">Name A–Z</option>
+        </select>
+      </label>
+      <label>Min. discount
+        <select id="min-discount">
+          <option value="0">Any</option>
+          <option value="25">25% off or more</option>
+          <option value="40">40% off or more</option>
+          <option value="50">50% off or more</option>
+        </select>
+      </label>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+<div class="filters">
+  <div class="wrap">
+    <span class="filter-label">Category</span>
+    <div class="chip-row" id="category-filters"></div>
+    <span class="filter-label">Store</span>
+    <div class="chip-row" id="store-filters"></div>
+    <span class="filter-label">Verdict</span>
+    <div class="chip-row" id="verdict-filters"></div>
+  </div>
+</div>
+<main class="wrap">
+  <p class="count-line" id="count-line"></p>
+  <div class="grid" id="grid"></div>
+  <div id="detail" hidden></div>
+</main>
+<footer>
+  <div class="wrap">
+    <h4>How this page was made</h4>
+    <p>Each deal was found and its price read on 27 November 2026 from the source named on the deal card — a deals roundup that names the store, or the store's own Black Friday release. The "usual" price is the one the store or source gives. The verdict is the maker's honest call: NEW LOW means the lowest price ever recorded for it, STRONG PRICE a genuinely good cut, ROUTINE SALE a small or frequent saving, and NOT A DEAL a price that was cheaper before (the evidence says when). Prices can change; check the store link before you buy.</p>
+    <p>TrueDeal is an independent deal finder built for a make.fun bounty. It is not affiliated with Amazon, Best Buy, Walmart, Target, Costco or Nintendo.</p>
+  </div>
+</footer>
+</body>
+</html>
